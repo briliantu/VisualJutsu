@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 250" role="img">
+  <rect width="360" height="250" rx="18" fill="#171820"/>
+  <path d="M180 229v-46" stroke="#bd8060" stroke-width="28" stroke-linecap="round"/>
+  <path d="M180 191c-27-8-43-23-43-41v-23c0-10 14-10 17 0V91c0-10 15-10 15 0V78c0-10 15-10 15 0v13c2-10 17-10 17 0v37c0 19-9 39-21 54Z" fill="#e9bd9a" stroke="#f8d9bf" stroke-width="4"/>
+  <path d="M135 131c13 0 20 7 25 14m65-32 15-9m-12 23 17-3" fill="none" stroke="#a76a53" stroke-width="5" stroke-linecap="round"/>
+  <path d="M250 100h27m-9-9 9 9-9 9" fill="none" stroke="#ffb978" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="180" y="230" fill="#f2c49e" text-anchor="middle" font-family="sans-serif" font-size="12" letter-spacing="3">LEFT THUMB ON OUTSIDE</text>
+</svg>

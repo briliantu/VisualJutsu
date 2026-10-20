@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 250" role="img">
+  <rect width="360" height="250" rx="18" fill="#171820"/>
+  <path d="M83 176h194" stroke="#bd8060" stroke-width="25" stroke-linecap="round"/>
+  <rect x="155" y="132" width="102" height="62" rx="24" fill="#c98667" stroke="#f1c5a7" stroke-width="4"/>
+  <path d="M115 120c0-15 13-27 29-27h77c16 0 29 12 29 27v20H115Z" fill="#e9bd9a" stroke="#f8d9bf" stroke-width="4"/>
+  <path d="M139 100v18m22-22v22m23-22v22m23-19v19" stroke="#a76a53" stroke-width="3" stroke-linecap="round"/>
+  <path d="M273 82v30m-9-9 9 9 9-9" fill="none" stroke="#ffb978" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="180" y="230" fill="#f2c49e" text-anchor="middle" font-family="sans-serif" font-size="12" letter-spacing="3">FLAT LEFT HAND · RIGHT FIST</text>
+</svg>

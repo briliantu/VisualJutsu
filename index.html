@@ -1,0 +1,190 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#0b0c11">
+    <meta name="description" content="Learn twelve illustrated hand seals, practice original elemental sequences, and create camera-powered effects.">
+    <title>Sealcraft — Hand Sign Studio</title>
+    <link rel="icon" type="image/svg+xml" href="assets/sealcraft-mark.svg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="tutorial.css">
+  </head>
+  <body>
+    <div class="page-shell">
+      <header class="topbar">
+        <a class="brand" href="#" aria-label="Sealcraft home">
+          <span class="brand-mark" aria-hidden="true"><span></span><span></span><span></span></span>
+          <span>SEALCRAFT<span class="brand-dot">.</span></span>
+        </a>
+        <div class="topbar-right">
+          <span class="edition">HAND SIGN STUDIO <span> / </span> 001</span>
+          <span class="status-pill" id="headerStatus"><i></i><span>CAMERA OFF</span></span>
+        </div>
+      </header>
+
+      <main>
+        <section class="intro">
+          <div class="eyebrow"><span class="eyebrow-line"></span> SIX ORIGINAL TECHNIQUES · ONE LIVE CAMERA</div>
+          <h1>Shape the signs.<br><span>Set the world alight.</span></h1>
+          <p>Choose a technique, follow its seal sequence, and hold each sign steady. Your camera becomes the stage for a one-of-a-kind elemental animation.</p>
+        </section>
+
+        <section class="studio" aria-label="Hand sign studio">
+          <aside class="spell-panel">
+            <div class="panel-heading">
+              <div>
+                <span class="section-kicker">01 / CHOOSE YOUR TECHNIQUE</span>
+                <h2>Pick your element</h2>
+              </div>
+              <span class="spell-count">06</span>
+            </div>
+
+            <div class="spell-list" id="spellList">
+              <button class="spell-card selected" data-spell="ember" type="button" aria-pressed="true">
+                <span class="spell-icon flare-icon" aria-hidden="true"><span></span></span>
+                <span class="spell-copy"><strong>Ember crown</strong><small>Fire · Dragon / Tiger / Ram</small></span>
+                <span class="spell-arrow" aria-hidden="true">↗</span>
+              </button>
+              <button class="spell-card" data-spell="tempest" type="button" aria-pressed="false">
+                <span class="spell-icon gale-icon" aria-hidden="true"><span></span></span>
+                <span class="spell-copy"><strong>Tempest thread</strong><small>Wind · Horse / Bird / Rat</small></span>
+                <span class="spell-arrow" aria-hidden="true">↗</span>
+              </button>
+              <button class="spell-card" data-spell="mirror" type="button" aria-pressed="false">
+                <span class="spell-icon tide-icon" aria-hidden="true"><span></span></span>
+                <span class="spell-copy"><strong>Mirror tide</strong><small>Water · Serpent / Monkey / Hare</small></span>
+                <span class="spell-arrow" aria-hidden="true">↗</span>
+              </button>
+              <button class="spell-card" data-spell="stone" type="button" aria-pressed="false">
+                <span class="spell-icon stone-icon" aria-hidden="true"><span></span></span>
+                <span class="spell-copy"><strong>Stonewake</strong><small>Earth · Ox / Dog / Boar</small></span>
+                <span class="spell-arrow" aria-hidden="true">↗</span>
+              </button>
+              <button class="spell-card" data-spell="wisp" type="button" aria-pressed="false">
+                <span class="spell-icon wisp-icon" aria-hidden="true"><span></span></span>
+                <span class="spell-copy"><strong>Wisp gate</strong><small>Spirit · Bird / Serpent / Tiger</small></span>
+                <span class="spell-arrow" aria-hidden="true">↗</span>
+              </button>
+              <button class="spell-card" data-spell="starfall" type="button" aria-pressed="false">
+                <span class="spell-icon star-icon" aria-hidden="true"><span></span></span>
+                <span class="spell-copy"><strong>Starfall seal</strong><small>Cosmos · Dragon / Hare / Monkey</small></span>
+                <span class="spell-arrow" aria-hidden="true">↗</span>
+              </button>
+            </div>
+
+            <div class="sequence-box">
+              <div class="sequence-title"><span>HAND-SEAL SEQUENCE</span><span id="sequenceCount">0 / 3</span></div>
+              <div class="sequence-slots" id="sequenceSlots" aria-label="Sequence progress">
+                <button class="sequence-slot" data-step="0" type="button"><i></i><b></b></button>
+                <button class="sequence-slot" data-step="1" type="button"><i></i><b></b></button>
+                <button class="sequence-slot" data-step="2" type="button"><i></i><b></b></button>
+              </div>
+              <p id="sequenceHint">Show an open palm to begin.</p>
+              <div class="hold-track" aria-hidden="true"><span id="holdProgress"></span></div>
+              <button class="practice-button" id="practiceSequence" type="button" aria-pressed="false">✳ &nbsp; PRACTICE THIS SEQUENCE</button>
+            </div>
+
+            <div class="seal-guide">
+              <div class="guide-heading"><span>THE TWELVE HAND SEALS</span><span id="learnedCount">0 / 12 TAUGHT</span></div>
+              <p class="seal-instructions">Tap a seal, then hold that hand-seal pose in view to teach your camera. Your samples stay on this device.</p>
+              <button class="study-all-button" id="studyAllSeals" type="button">OPEN ALL 12 LESSONS <span>↗</span></button>
+              <div class="seal-grid" id="sealGrid" aria-label="Hand seal library"></div>
+            </div>
+            <div class="privacy-note"><span class="lock-icon" aria-hidden="true">▣</span> Hand-sign samples stay in this browser. No camera footage is saved.</div>
+          </aside>
+
+          <section class="camera-panel" aria-label="Live camera">
+            <div class="camera-topline">
+              <span><i class="live-dot"></i> LIVE VIEW</span>
+              <span class="camera-mode" id="cameraMode">AWAITING CAMERA</span>
+            </div>
+            <div class="camera-stage" id="cameraStage">
+              <video id="cameraVideo" autoplay playsinline muted></video>
+              <canvas id="effectsCanvas" aria-hidden="true"></canvas>
+              <div class="camera-corners" aria-hidden="true"><i></i><i></i><i></i><i></i></div>
+              <div class="camera-empty" id="cameraEmpty">
+                <div class="camera-orbit" aria-hidden="true"><span>✳</span></div>
+                <strong>Your dojo is ready</strong>
+                <p>Enable your camera to start shaping signs.</p>
+                <button class="start-button" id="startCamera" type="button"><span>✳</span> Enter the dojo</button>
+              </div>
+              <div class="loading-state" id="loadingState" hidden>
+                <span class="loader"></span>
+                <strong>Opening the dojo</strong>
+                <p>Loading camera and hand tracking…</p>
+              </div>
+              <div class="cast-banner" id="castBanner" aria-live="polite">
+                <span class="cast-spark">✳</span>
+                <span><small>TECHNIQUE RELEASED</small><strong id="castName">Ember crown</strong></span>
+              </div>
+              <div class="training-banner" id="trainingBanner" aria-live="polite" hidden>
+                <span class="training-ring"></span>
+                <strong id="trainingTitle">Teaching hand seal</strong>
+                <span id="trainingMessage">Hold the pose steady</span>
+              </div>
+              <aside class="practice-card" id="practiceCard" aria-live="polite" hidden>
+                <button class="practice-close" id="practiceClose" type="button" aria-label="Close guided practice">×</button>
+                <div class="practice-card-heading"><span id="practiceCounter">STEP 1 / 3</span><span>LOOK · SHAPE · HOLD</span></div>
+                <img id="practiceImage" src="assets/seals/dragon.svg" alt="">
+                <strong id="practiceTitle">Dragon seal</strong>
+                <p id="practiceCue">Bring both hands together and point fingers upward.</p>
+                <button class="tutorial-link" id="practiceLearn" type="button">OPEN FULL TUTORIAL ↗</button>
+              </aside>
+              <div class="hand-label" id="handLabel">HAND TRACKING READY</div>
+            </div>
+            <div class="camera-footer">
+              <div class="detection-state"><span class="detection-indicator" id="detectionIndicator"></span><span id="detectionText">Camera is off</span></div>
+              <div class="camera-actions">
+                <button class="camera-control" id="stopCamera" type="button" hidden>END SESSION</button>
+                <button class="sound-toggle" id="soundToggle" type="button" aria-pressed="true"><span class="sound-icon">♫</span><span>SOUND ON</span></button>
+              </div>
+            </div>
+            <div class="mobile-sequence" id="mobileSequence">
+              <span>SEQUENCE</span><strong id="mobileSequenceCount">0 / 3</strong>
+            </div>
+          </section>
+        </section>
+
+        <footer class="page-footer">
+          <span>AN ORIGINAL HAND-TRACKING EXPERIENCE</span>
+          <span>MADE FOR THE MOMENT <i>✳</i></span>
+        </footer>
+      </main>
+      <div class="toast" id="toast" role="status" aria-live="polite"></div>
+    </div>
+    <dialog class="tutorial-dialog" id="sealTutorial" aria-labelledby="tutorialTitle">
+      <div class="tutorial-shell">
+        <div class="tutorial-topline">
+          <span><i></i> HAND-SEAL FIELD GUIDE</span>
+          <span id="tutorialIndex">01 / 12</span>
+          <button id="tutorialClose" class="tutorial-close" type="button" aria-label="Close hand-seal tutorial">×</button>
+        </div>
+        <div class="tutorial-layout">
+          <figure class="tutorial-figure">
+            <img id="tutorialImage" src="assets/seals/dragon.svg" alt="">
+            <figcaption>ORIGINAL POSE DIAGRAM · TWO HANDS</figcaption>
+          </figure>
+          <section class="tutorial-copy">
+            <span class="section-kicker">POSE BREAKDOWN</span>
+            <h2 id="tutorialTitle">Dragon seal</h2>
+            <p class="tutorial-subtitle" id="tutorialSubtitle"></p>
+            <ol id="tutorialSteps"></ol>
+            <p class="tutorial-tip"><strong>CAMERA TIP</strong><span id="tutorialTip"></span></p>
+            <button class="tutorial-speak" id="tutorialSpeak" type="button">♫ &nbsp; READ GUIDE ALOUD</button>
+            <p class="tutorial-source-note">Pose cues are adapted from your reference captions. The diagrams are original illustrations, not copied anime or manga panels.</p>
+          </section>
+        </div>
+        <div class="tutorial-controls">
+          <button id="tutorialPrevious" class="tutorial-secondary" type="button">← PREVIOUS SEAL</button>
+          <button id="tutorialTeach" class="tutorial-primary" type="button">PRACTICE THIS SEAL ↗</button>
+          <button id="tutorialNext" class="tutorial-secondary" type="button">NEXT SEAL →</button>
+        </div>
+      </div>
+    </dialog>
+    <script type="module" src="app.js"></script>
+  </body>
+</html>

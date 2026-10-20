@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 250" role="img">
+  <rect width="360" height="250" rx="18" fill="#171820"/>
+  <path d="M180 220v-44" stroke="#bd8060" stroke-width="25" stroke-linecap="round"/>
+  <path d="M106 91c10-12 24-12 36-4l18 16 21-15c13-10 26-6 34 5l34 42-25 26-26-21-18 20-21-17-20 15-46-43Z" fill="#e9bd9a" stroke="#f8d9bf" stroke-width="4" stroke-linejoin="round"/>
+  <path d="M126 106 165 143m-18-50 40 39m-11-30 39 33m-22-41 40 29" fill="none" stroke="#a76a53" stroke-width="4" stroke-linecap="round"/>
+  <path d="M180 66v20m-9-9 9 9 9-9" fill="none" stroke="#ffb978" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="180" y="230" fill="#f2c49e" text-anchor="middle" font-family="sans-serif" font-size="12" letter-spacing="3">INTERLACE · RELAX YOUR WRISTS</text>
+</svg>

@@ -1,0 +1,57 @@
+.tutorial-dialog {
+  width: min(790px, calc(100vw - 28px));
+  max-width: none;
+  max-height: min(90vh, 760px);
+  padding: 0;
+  overflow: auto;
+  border: 1px solid #39343a;
+  border-radius: 12px;
+  background: #101117;
+  color: #f5f3ef;
+  box-shadow: 0 25px 110px #000b;
+}
+
+.tutorial-dialog::backdrop {
+  background: #06070bd9;
+  backdrop-filter: blur(8px);
+}
+
+.tutorial-shell { padding: 22px; }
+.tutorial-topline { display: flex; align-items: center; gap: 13px; color: #858691; font: 9px "DM Mono", monospace; letter-spacing: .1em; }
+.tutorial-topline > span:first-child { display: flex; align-items: center; gap: 8px; flex: 1; color: #dbab82; }
+.tutorial-topline > span:first-child i { width: 6px; height: 6px; border-radius: 50%; background: #f0a25f; box-shadow: 0 0 10px #f0a25f; }
+.tutorial-close { width: 31px; height: 31px; border: 1px solid #393a45; border-radius: 50%; background: #171820; color: #e7e5e2; font-size: 21px; cursor: pointer; }
+.tutorial-close:hover { border-color: #c28b62; color: #ffc38e; }
+.tutorial-layout { display: grid; grid-template-columns: minmax(0, 1.1fr) minmax(235px, .9fr); gap: 24px; padding: 19px 0 16px; }
+.tutorial-figure { align-self: center; margin: 0; }
+.tutorial-figure img { display: block; width: 100%; border: 1px solid #37333a; border-radius: 8px; background: #171820; }
+.tutorial-figure figcaption { padding-top: 8px; color: #737581; text-align: center; font: 8px "DM Mono", monospace; letter-spacing: .08em; }
+.tutorial-copy { align-self: center; }
+.tutorial-copy .section-kicker { color: #a27a5d; font: 9px "DM Mono", monospace; letter-spacing: .1em; }
+.tutorial-copy h2 { margin: 8px 0 4px; font-size: clamp(24px, 5vw, 34px); letter-spacing: -.045em; }
+.tutorial-subtitle { margin: 0; color: #cba07e; font-size: 11px; }
+.tutorial-copy ol { margin: 20px 0; padding-left: 24px; color: #d0d0d6; font-size: 11px; line-height: 1.7; }
+.tutorial-copy li { padding-left: 3px; margin-bottom: 9px; }
+.tutorial-copy li::marker { color: #e6a36c; font-family: "DM Mono", monospace; }
+.tutorial-tip { display: grid; gap: 6px; margin: 0; padding: 11px; border: 1px solid #38313a; border-radius: 6px; background: #19171d; }
+.tutorial-tip strong { color: #d69f74; font: 8px "DM Mono", monospace; letter-spacing: .09em; }
+.tutorial-tip span { color: #b7b6bf; font-size: 10px; line-height: 1.5; }
+.tutorial-source-note { margin: 12px 0 0; color: #71737e; font-size: 9px; line-height: 1.5; }
+.tutorial-controls { display: flex; justify-content: space-between; align-items: center; gap: 9px; padding-top: 14px; border-top: 1px solid #2a2b34; }
+.tutorial-controls button { min-height: 37px; padding: 0 12px; border-radius: 5px; cursor: pointer; font: 8px "DM Mono", monospace; letter-spacing: .05em; }
+.tutorial-controls button:focus-visible { outline: 2px solid #f0a25f; outline-offset: 3px; }
+.tutorial-secondary { border: 1px solid #383943; background: #171820; color: #b0b1ba; }
+.tutorial-secondary:hover:not(:disabled) { border-color: #8b6346; color: #f2c09a; }
+.tutorial-secondary:disabled { opacity: .35; cursor: not-allowed; }
+.tutorial-primary { border: 1px solid #bf8152; background: #df955b; color: #17110e; font-weight: 700; }
+.tutorial-primary:hover { background: #f2ab70; }
+
+@media (max-width: 600px) {
+  .tutorial-shell { padding: 15px; }
+  .tutorial-layout { grid-template-columns: 1fr; gap: 14px; }
+  .tutorial-figure img { max-height: 220px; object-fit: contain; }
+  .tutorial-copy ol { margin: 13px 0; }
+  .tutorial-controls { flex-wrap: wrap; }
+  .tutorial-primary { order: -1; width: 100%; }
+  .tutorial-controls button { flex: 1; }
+}

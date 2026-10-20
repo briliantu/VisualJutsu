@@ -1,0 +1,17 @@
+# Local hand-pose calibration data and environment settings
+.env
+.env.*
+!.env.example
+*.local
+
+# Editor and operating-system files
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# Dependency and build output
+node_modules/
+dist/
+coverage/

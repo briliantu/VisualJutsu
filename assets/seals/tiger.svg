@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 250" role="img">
+  <rect width="360" height="250" rx="18" fill="#171820"/>
+  <path d="M180 224V166" stroke="#bd8060" stroke-width="24" stroke-linecap="round"/>
+  <path d="M180 179c-12-13-25-29-25-48V74c0-11 14-11 14 0v42-58c0-11 14-11 14 0v56-64c0-10 14-10 14 0v64-54c0-11 14-11 14 0v61c0 22-12 43-31 58Z" fill="#e9bd9a" stroke="#f8d9bf" stroke-width="3" stroke-linejoin="round"/>
+  <path d="M177 171c-25-9-40-25-40-43v-25c0-8 12-10 15-2l9 17V81c0-8 12-10 15-2l12 18Z" fill="#c98667" stroke="#f1c5a7" stroke-width="3" stroke-linejoin="round"/>
+  <path d="M194 169c25-9 40-25 40-43v-25c0-8-12-10-15-2l-9 17V81c0-8-12-10-15-2l-12 18Z" fill="#e9bd9a" stroke="#f8d9bf" stroke-width="3" stroke-linejoin="round"/>
+  <path d="M172 42v21m16-21v21" stroke="#ffb978" stroke-width="3" stroke-linecap="round"/>
+  <text x="180" y="230" fill="#f2c49e" text-anchor="middle" font-family="sans-serif" font-size="12" letter-spacing="3">THUMBS STRAIGHT UP</text>
+</svg>
